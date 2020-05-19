@@ -33,9 +33,10 @@ __Other VSCode extensions I like__
 - Comment Divider
 - Auto Rename Tag
 - IntelliSense for CSS class names in HTML
+- Material Icon Theme
 
 __VSCode Themes to try__
-Type `theme` in command pallete 
+Type `theme` in command pallete to change
 - Monokai Pro
 - One Dark Pro
 - Night Owl
@@ -43,5 +44,5 @@ Type `theme` in command pallete
 - Nord
 - Rouge
 - [Synthwave x Fluoromachine](https://marketplace.visualstudio.com/items?itemName=webrender.synthwave-x-fluoromachine) lol
-Icon Themes
-- Material Icon Theme
+
+
