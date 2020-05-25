@@ -1,18 +1,27 @@
 /* ------------------------------------------- Imports ------------------------------------------ */
 
 const express = require('express');
+const cors = require('cors');
 const auth = require('./auth');
+const middlewares = require('./auth/middlewares');
 require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 /* ----------------------------------------- Middleware ----------------------------------------- */
+
+app.use(cors());
+app.use(express.json());
+app.use(middlewares.checkTokenSetUser);
 app.use('/auth', auth);
+
+/* ----------------------------------------- Test Route ----------------------------------------- */
 
 app.get('/', (req, res) => {
     res.json({
-        message: 'Welcome to the Backend!',
+        message: 'Check if user exists: ',
+        user: req.user,
     });
 });
 
